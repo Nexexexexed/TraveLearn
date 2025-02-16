@@ -1,0 +1,96 @@
+
+
+.header{
+    background-color: #14232f;
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+
+}
+
+
+.logo{
+    width:100px;
+    height: 100px;
+    margin-left: 5rem;
+}
+.btn_menu {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    margin-right: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.hamb_menu{
+    top: 40px;
+    width: 40px;
+    height: 4px;
+    background-color: white;
+    position: relative;
+}
+
+.hamb_menu::before,
+.hamb_menu::after {
+  content: '';
+  width: 40px;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+
+.hamb_menu::before {
+    top: -10px;
+}
+  
+.hamb_menu::after {
+    top: 10px;
+}
+
+.text_logo{
+    color: white;
+    font-size: 4em;
+    font-family: "Limelight", serif;
+    font-weight: 400;
+}
+
+
+
+.menu{
+    padding-top: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    font-family: "Limelight", serif;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+
+.nav {
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 100vh;
+    width: 20%;
+    z-index: 9999;
+    opacity: 0.9;
+    transition: transform 0.3s ease;
+  }
+  
+  .show {
+    transform: translateX(0);
+  }
